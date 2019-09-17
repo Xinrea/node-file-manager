@@ -20,19 +20,7 @@
   </style>
 </head>
 
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">录制文件管理</a>
-      </div>
-    </div>
-  </nav>
-
   <div class="container">
-    <div class="btn-toolbar" style="margin-bottom: 20px;">
-      <button type="button" class="btn btn-default" ng-disabled="FM.btnDisabled('download')" ng-click="FM.download()"><span class="glyphicon glyphicon-download"></span> 下载</button>
-    </div>
-
     <ol class="breadcrumb">
       <span class="glyphicon glyphicon-home"></span>
       <li ng-repeat="p in FM.curBreadCrumbPaths"><a href={{p.path}}>{{p.dname}}</a></li>
